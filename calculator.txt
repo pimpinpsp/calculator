@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+
+int selection, number1, number2; //Same as me doing this, but this saves time.. space ect.
+
+int main()
+{
+    system("cls");
+    cout << "Enter a number: ";
+    cin >> number1;
+    cout << "Enter another number: ";
+    cin >> number2;
+    system("cls");
+    cout << "Select operation:\n\n";
+    cout << "1 - Addition\n";
+    cout << "2 - Subtraction\n";
+    cout << "Other: Close Program\n\n";
+    cin >> selection;
+    system("cls");
+    if (selection == 1) //This is saying, if selection is 1 then do this..
+    { //Start of stuff to do
+              cout << number1 << " + " << number2 << " = " << number1 + number2 << "\n";
+    } //End of stuff to do
+    if (selection == 2) //This is saying if selection is not 1, then if selection 2 do this..
+    {
+                  cout << number1 << " - " << number2 << " = " << number1 - number2 << "\n";
+    }
+    system("pause");
+    return main();
+}
